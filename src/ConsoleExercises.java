@@ -13,7 +13,6 @@ public class ConsoleExercises {
         // or can output using
         // System.out.printf("Your number is %d", integer);
 
-
         // Prompt a user to enter 3 words, and store each of them in a separate variable. Then, display them back in the console, each on a newline.
 //        System.out.print("Enter 3 words: ");
 //        String strings = scanner.nextLine();
