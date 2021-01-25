@@ -73,7 +73,6 @@ public class SyntaxLecture {
             System.out.println("We have a match for Hello using .equals");
         }
 
-
         // like in JS, strings must escape certain characters like quotes and use it to inject newline characters and other formatting
         System.out.println("Hello\nWorld"); // \n is for new line
 
