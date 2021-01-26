@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
-public class StringExercises {
+public class StringExercise {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        String str1 = "We don't need no education \r\nWe don't need no thought control";
+        String str1 = "We don't need no education \nWe don't need no thought control";
         System.out.println(str1);
         System.out.println();
 

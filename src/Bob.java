@@ -7,14 +7,14 @@ public class Bob {
         String yell = "Whoa, chill out!";
         String empty = "Fine. Be that way!";
         String other = "Whatever.";
-
         System.out.println("Enter anything below for Bob to answer.");
-        String input = sc.nextLine();
+        String input = sc.nextLine().trim();
+
         if(input.endsWith("?")){
             System.out.println(answer);
         } else if(input.endsWith("!")) {
             System.out.println(yell);
-        } else if(input.endsWith("")){
+        } else if(input.isEmpty()){
             System.out.println(empty);
         } else {
             System.out.println(other);
