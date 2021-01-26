@@ -58,17 +58,42 @@ public class ControlFlowExercises {
 
         // Display table of powers
         Scanner scanner = new Scanner(System.in);
-        System.out.print("What number would you like to go up to?");
-        int input = scanner.nextInt();
+//        boolean userSaysContinue = false;
+//        do {
+//            System.out.print("What number would you like to go up to?");
+//            int input = scanner.nextInt();
+//            System.out.println("\nHere is your table!\n");
+//            System.out.println("number | squared | cubed");
+//            System.out.println("------ | ------ | ------");
+//            for (int p = 1; p <= input; p++) {
+//                System.out.printf("%-6d | %-7d | %-5d%n", p, p * p, p * p * p);
+//            }
+//            System.out.println();
+//            System.out.println("Do you want to continue? (true/false)");
+//            userSaysContinue = scanner.nextBoolean();
+//        } while (userSaysContinue);
 
-        System.out.println("\nHere is your table!\n");
-        System.out.println("number | squared | cubed");
-        System.out.println("------ | ------ | ------");
-        for (int p = 1; p <= input; p++) {
-            System.out.printf("%-6d | %-7d | %-5d%n", p, p*p,p*p*p);
-//            System.out.print(p + " ");
-//            System.out.print(p*p + " "); // square p
-//            System.out.println(p*p*p);
-        }
+        boolean userWantsToContinue = false;
+        do {
+
+            System.out.println("\nWhat is the numerical grade? (0 to 100)");
+            int grade = scanner.nextInt();
+            if (grade >= 88 && grade <= 100) {
+                System.out.println("A");
+            } else if (grade >= 80 && grade <= 87) {
+                System.out.println("B");
+            } else if (grade >= 67 && grade <= 79) {
+                System.out.println("C");
+            } else if (grade >= 60 && grade <= 66) {
+                System.out.println("D");
+            } else if (grade >= 0 && grade <= 59) {
+                System.out.println("F");
+            } else {
+                System.out.println("Invalid Number");
+            }
+            System.out.println("Type yes if you want to continue (y/n)?");
+            String userResponse = scanner.next();
+            userWantsToContinue = (userResponse.equals("y"));
+        } while (userWantsToContinue);
     }
 }
