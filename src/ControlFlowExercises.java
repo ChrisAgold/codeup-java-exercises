@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ControlFlowExercises {
     public static void main(String[] args) {
         // while loop
@@ -54,6 +56,19 @@ public class ControlFlowExercises {
 //            System.out.print(' ');
 //        }
 
+        // Display table of powers
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("What number would you like to go up to?");
+        int input = scanner.nextInt();
 
+        System.out.println("\nHere is your table!\n");
+        System.out.println("number | squared | cubed");
+        System.out.println("------ | ------ | ------");
+        for (int p = 1; p <= input; p++) {
+            System.out.printf("%-6d | %-7d | %-5d%n", p, p*p,p*p*p);
+//            System.out.print(p + " ");
+//            System.out.print(p*p + " "); // square p
+//            System.out.println(p*p*p);
+        }
     }
 }
