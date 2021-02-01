@@ -1,4 +1,5 @@
 package Shapes;
+
 import util.Input;
 
 public class CircleApp {
@@ -7,7 +8,6 @@ public class CircleApp {
         double radius = input.getDouble();
         Circle circle = new Circle(radius);
         System.out.println("circle.getArea() = " + circle.getArea());
-        System.out.println("circle.getArea() = " + circle.getCircumference());
-
+        System.out.println("circle.getCircumference() = " + circle.getCircumference());
     }
 }
