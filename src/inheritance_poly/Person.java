@@ -1,10 +1,16 @@
 package inheritance_poly;
 
-public class Person {
-    public String name;
+class Person {
+    private String name;
+    protected String phone;
 
     public Person(String name) {
-        this.name = name;
+        this.name = name.trim();
+    }
+
+    // Gets the real name
+    public String getName() {
+        return name;
     }
 
     public void sayHello() {
