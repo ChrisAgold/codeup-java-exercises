@@ -1,43 +1,40 @@
 package Shapes;
 
 public class Rectangle {
-    private int length;
-    private int width;
+    protected double length;
+    protected double width;
 
 
     // Constructors
-    public Rectangle(int length, int width) {
-        System.out.println("Account constructor with parameters called");
+    public Rectangle(double length, double width) {
         this.width = width;
         this.length = length;
     }
 
-
     // Methods perimeter
-    public int calcPerimeter() {
-        return 2 * this.length + 2 * this.width;
+    public double calcPerimeter() {
+        return (2 * this.length) + (2 * this.width);
     }
 
     // Methods Area
-    public int calcArea() {
+    public double calcArea() {
         return this.length * this.width;
     }
 
-
     // Getters & Setters
-    public int getLength() {
+    public double getLength() {
         return length;
     }
 
-    public void setLength(int length) {
+    public void setLength(double length) {
         this.length = length;
     }
 
-    public int getWidth() {
+    public double getWidth() {
         return width;
     }
 
-    public void setWidth(int width) {
+    public void setWidth(double width) {
         this.width = width;
     }
 

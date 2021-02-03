@@ -15,9 +15,6 @@ public class ShapesTest {
         System.out.println(box2.calcArea());
         System.out.println(box2.calcPerimeter());
 
-
-
-
     }
 
 }
