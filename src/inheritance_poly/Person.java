@@ -17,4 +17,3 @@ class Person {
         System.out.println("Hello from " + name + "!");
     }
 }
-
