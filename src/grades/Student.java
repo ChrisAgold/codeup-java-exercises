@@ -3,12 +3,12 @@ package grades;
 import java.util.ArrayList;
 
 public class Student {
-//    public static void main(String[] args) {
-//        Student tim = new Student("tim");
-//        tim.addGrade(70);
-//        tim.addGrade(90);
-//        System.out.println(tim.grades);
-//    }
+    public static void main(String[] args) {
+        Student tim = new Student("tim");
+        tim.addGrade(70);
+        tim.addGrade(90);
+        System.out.println(tim.grades);
+    }
 
     // Variables
     private String name;
@@ -45,7 +45,10 @@ public class Student {
 
     // returns the average of the students grades
 //    public double getGradeAverage() {
-//        return (double) grades.add(grade) / grades.size;
+//        double sum = 0;
+//        for (int grade : grades)
+//            sum += grades[i];
+//        return sum / grades.size();
 //    }
 
 }
