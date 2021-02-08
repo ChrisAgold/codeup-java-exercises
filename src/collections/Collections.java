@@ -79,7 +79,8 @@ public class Collections {
         //   b. Github username
         // 2. re-initialize the HashMap using the .clear() method
         // 3. use the .put() method to add "Casey" -> "fridaynext" back to the map
-        // 4. use the .putIfAbsent() method to add
+        // 4. use the .putIfAbsent() method t
+        // o add
         //   a. "Vivian" -> "viviancan"
         //   b. "Casey" -> "XpenguinX"
         // 5. What happend with the .putIfAbsent()? Did both items get added? Why/why not?
