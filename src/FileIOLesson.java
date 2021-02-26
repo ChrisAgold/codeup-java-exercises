@@ -71,8 +71,6 @@ class FileIOLesson {
 //        );
 //        Files.write(filepath, languages, StandardOpenOption.APPEND);
 
-
-
         // Demo: reading a file
 
         Path filepath = Paths.get("languages.txt");
@@ -84,7 +82,5 @@ class FileIOLesson {
                 System.out.println("This is my favorite language!");
             }
         }
-
     }
-
 }
